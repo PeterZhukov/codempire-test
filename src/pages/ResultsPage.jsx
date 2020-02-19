@@ -3,7 +3,12 @@ import React, { Component } from "react";
 class ResultsPage extends Component {
   state = {};
   render() {
-    return <div>ResultsPage</div>;
+    return (
+      <div>
+        Вы ответили правильно на {this.props.getNumberOfRightQuestions()}{" "}
+        вопросов из {this.props.questions.length}
+      </div>
+    );
   }
 }
 
